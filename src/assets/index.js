@@ -18,7 +18,10 @@ import reactjs from "./tech/reactjs.png";
 import redux from "./tech/redux.png";
 import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
-import threejs from "./tech/threejs.svg";
+import threejs from "./tech/threejs.png";
+import nextjs from "./tech/nextjs.png";
+import MySQL from "./tech/MySQL.png";
+import Prisma from "./tech/Prisma.png";
 
 import samosaKing from "./company/samosaKing.png";
 import r2b from "./company/R2b.svg";
@@ -29,8 +32,10 @@ import SnakeGame from "./SnakeGame.png";
 import BookKeeperUI from "./BookKeeperUI.png";
 import Muisician from "./Muisician.png";
 import Macbeth from "./Macbeth.png";
+import RayPfp from "./RayPfp.jpg";
 
 export {
+  RayPfp,
   samosaKing,
   logo,
   backend,
@@ -59,4 +64,7 @@ export {
   BookKeeperUI,
   Muisician,
   Macbeth,
+  nextjs,
+  Prisma,
+  MySQL,
 };

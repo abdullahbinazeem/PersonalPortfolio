@@ -1,14 +1,15 @@
 import {
   mobile,
   backend,
-  creator,
   web,
   javascript,
   typescript,
+  nextjs,
+  Prisma,
+  MySQL,
   html,
   css,
   reactjs,
-  redux,
   tailwind,
   nodejs,
   mongodb,
@@ -23,6 +24,7 @@ import {
   Macbeth,
   SnakeGame,
   BookKeeperUI,
+  RayPfp,
 } from "../assets";
 
 export const navLinks = [
@@ -53,19 +55,15 @@ const services = [
     title: "UI / UX designer",
     icon: backend,
   },
-  {
-    title: "Unity Game Creator ",
-    icon: creator,
-  },
 ];
 
 const technologies = [
   {
-    name: "HTML 5",
+    name: "HTML",
     icon: html,
   },
   {
-    name: "CSS 3",
+    name: "CSS ",
     icon: css,
   },
   {
@@ -79,10 +77,6 @@ const technologies = [
   {
     name: "React JS",
     icon: reactjs,
-  },
-  {
-    name: "Redux Toolkit",
-    icon: redux,
   },
   {
     name: "Tailwind CSS",
@@ -101,12 +95,24 @@ const technologies = [
     icon: threejs,
   },
   {
-    name: "git",
+    name: "Git",
     icon: git,
   },
   {
-    name: "figma",
+    name: "Figma",
     icon: figma,
+  },
+  {
+    name: "Next Js",
+    icon: nextjs,
+  },
+  {
+    name: "Prisma",
+    icon: Prisma,
+  },
+  {
+    name: "MySQL",
+    icon: MySQL,
   },
 ];
 
@@ -141,11 +147,14 @@ const experiences = [
 
 const testimonials = [
   {
-    testimonial: "Lorem",
-    name: "Lorem",
-    designation: "Lorem",
-    company: "Lorem",
-    image: " ",
+    testimonial:
+      "My name is Raymond Barkwill and I am the owner of the R2B Frontrow group. I am a coaching consulting group that works with high-performance rugby players from around North America. I reached out to Abdullah back in 2021 about building my first website for a consulting business I wanted to grow. From the initial moments of speaking with him, I felt a level of professionalism",
+    testimonialMore:
+      "that was above his years. His communication within the project was outstanding and I felt that I was very receptive to my requirements and desires regarding how I wanted to display my skills toward informing my potential clients about the services I offer. He was open to me enquiring about his insight and direction within the design of the webpage that would help best highlight me and my business. At the end of the final project came out exactly the way I envisioned it and he has followed up multiple times towards updating and improving the site.",
+    name: "Ray Barkwill",
+    designation: "Owner",
+    company: "R2b Frontrow and Former National Canadian Rugby Player",
+    image: RayPfp,
   },
 ];
 
@@ -178,6 +187,7 @@ const projects = [
   },
   {
     name: "Ray Barkwill Portal",
+
     description:
       "Front end web application developed in react js, it is a web portfolio for Ray Barkwill. A retired Canadian national rugby player.",
     tags: [
@@ -191,12 +201,11 @@ const projects = [
       },
       {
         name: "HTML/CSS",
-        siteLink: "http://r2bfrontrow.com/",
         color: "pink-text-gradient",
       },
     ],
     image: Raybarkwill,
-    source_code_link: "",
+    siteLink: "http://r2bfrontrow.com/",
   },
   {
     name: "Samosa King",
@@ -234,7 +243,7 @@ const projects = [
       },
     ],
     image: SnakeGame,
-    siteLink: "google.com",
+    siteLink: "https://snakio.netlify.app/",
     source_code_link: "https://github.com/ABDAZ321/SocketServer",
   },
   {

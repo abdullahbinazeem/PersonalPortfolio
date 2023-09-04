@@ -8,31 +8,33 @@ import { fadeIn, textVariant } from "../utils/motion";
 
 import { SectionWrapper } from "../hoc";
 
-const ServiceCard = ({ index, title, icon }) => {
-  return (
-    <Tilt className="xs:w-[250px] w-full">
-      <motion.div
-        variants={fadeIn("right", "spring", 0.5 * index, 1)}
-        className="w-full green-pink-gradient p-[1px] rounded-[20px] shadow-card"
+const ServiceCard = ({ index, title, icon }) => (
+  <Tilt className="xs:w-[250px] w-full">
+    <motion.div
+      variants={fadeIn("right", "spring", index * 0.5, 0.75)}
+      className="w-full green-pink-gradient p-[1px] rounded-[20px] shadow-card"
+    >
+      <div
+        options={{
+          max: 45,
+          scale: 1,
+          speed: 450,
+        }}
+        className="bg-tertiary rounded-[20px] py-5 px-12 min-h-[280px] flex justify-evenly items-center flex-col"
       >
-        <div
-          options={{
-            max: 45,
-            scale: 1,
-            speed: 450,
-          }}
-          className="bg-tertiary rounded-[20px] py-5 px-12 min-h-[280px] flex justify-evenly items-center
-          flex-col"
-        >
-          <img src={icon} alt={title} className="w-16 h-16 object-contain" />
-          <h3 className="text-white text-[20px] font-bold text-center">
-            {title}
-          </h3>
-        </div>
-      </motion.div>
-    </Tilt>
-  );
-};
+        <img
+          src={icon}
+          alt="web-development"
+          className="w-16 h-16 object-contain"
+        />
+
+        <h3 className="text-white text-[20px] font-bold text-center">
+          {title}
+        </h3>
+      </div>
+    </motion.div>
+  </Tilt>
+);
 
 const About = () => {
   return (
@@ -46,13 +48,15 @@ const About = () => {
         variants={fadeIn("", "", 0.1, 1)}
         className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]"
       >
-        I am a full stack developer with experience in Javascript and C#, I also
-        have expertise in frameworks such as Node js, React, Next js, Three js,
-        angular, and TypeOrm. Aswell as this I also work on the Back end side of
-        things where I use technologies such as MongoDB, MySql, and Next Js
+        I'm a skilled fullstack developer in Victoria, BC. I have experience
+        with TypeScript and JavaScript, and speciliaze in creating full stack
+        apps in React and Next Js. I'm a quick learner and collaborate closely
+        with clients to create efficient, scalable, and user-friendly solutions
+        that solve real-world problems. Let's work together to bring your ideas
+        to life!
       </motion.p>
 
-      <div className="mt-20 flex flex-wrap gap-10">
+      <div className="mt-20 justify-center flex flex-wrap gap-10">
         {services.map((service, index) => (
           <ServiceCard key={service.title} index={index} {...service} />
         ))}
