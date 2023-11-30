@@ -17,20 +17,23 @@ const ProjectCard = ({
   siteLink,
 }) => {
   return (
-    <motion.div variants={fadeIn("up", "string", index * 0.5, 0.75)}>
+    <motion.div
+      variants={fadeIn("up", "string", index * 0.5, 0.75)}
+      className="z-0"
+    >
       <Tilt
         options={{
           max: 45,
           scale: 1,
-          speed: 450,
+          speed: 1500,
         }}
-        className="h-[100%] bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full"
+        className="h-[100%] bg-tertiary p-5 rounded-2xl sm:w-[350px] w-full z-0"
       >
-        <div className="relative w-full h-[200px]">
+        <div className="relative w-full h-[200px] z-[10] hover:w-[120%]  group  transition-all duration-1000">
           <img
             src={image}
             alt={name}
-            className="w-full h-full object-cover rounded-2xl"
+            className="w-full h-full object-cover rounded-2xl  absolute group-hover:h-[120% group-hover:top-[-10%]] group-hover:left-[-10%]  transition-all duration-1000"
           />
 
           {source_code_link ? (
@@ -57,16 +60,19 @@ const ProjectCard = ({
 
         <div className="mt-6 mb-6 flex ">
           <a href={siteLink} target="_blank">
-            <h3 className="bg-black-200 p-4 text-white font-[500] text-[18px]  rounded-2xl">
+            <h3 className="bg-black-200 p-4 text-white  text-[16px]  rounded-lg">
               View
             </h3>
           </a>
         </div>
 
-        <div className="mt-4 flex flex-wrap gap-4 ">
+        <div className="mt-4  flex-wrap gap-4   overflow-hidden flex transition-all ">
           {tags.map((tag) => (
-            <div className={`bg-black-100 rounded-2xl`}>
-              <p key={tag.name} className={`p-4 text-[12px] ${tag.color}`}>
+            <div className={`bg-black-100 rounded-md`}>
+              <p
+                key={tag.name}
+                className={`p-3 font-semibold text-[10px] ${tag.color}`}
+              >
                 {tag.name}
               </p>
             </div>
@@ -85,7 +91,7 @@ const Works = () => {
         <h2 className={`${styles.sectionHeadText}`}>Projects.</h2>
       </motion.div>
 
-      <div className="w-full flex">
+      <div className="w-full flex ">
         <motion.p
           variants={fadeIn("", "", 0, 1, 1)}
           className="mt-3 text-secondary 
@@ -101,9 +107,9 @@ const Works = () => {
         </motion.p>
       </div>
 
-      <div className="mt-20 flex flex-wrap gap-7 ">
-        {projects.map((projects, index) => (
-          <ProjectCard key={`project-${index}`} index={index} {...projects} />
+      <div className="mt-20 flex justify-evenly flex-wrap gap-7 ">
+        {projects.map((project, index) => (
+          <ProjectCard key={index} index={index} {...project} />
         ))}
       </div>
     </div>

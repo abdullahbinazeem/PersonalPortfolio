@@ -5,19 +5,14 @@ import {
   javascript,
   typescript,
   nextjs,
-  Prisma,
-  MySQL,
   html,
   css,
   reactjs,
   tailwind,
   nodejs,
   mongodb,
-  git,
   figma,
   threejs,
-  samosaKing,
-  r2b,
   SamosaSite,
   Raybarkwill,
   Muisician,
@@ -25,6 +20,10 @@ import {
   SnakeGame,
   BookKeeperUI,
   RayPfp,
+  byteCamp,
+  LangfordMan,
+  Xamaa,
+  Eccomerce,
 } from "../assets";
 
 export const navLinks = [
@@ -75,6 +74,10 @@ const technologies = [
     icon: typescript,
   },
   {
+    name: "Next Js",
+    icon: nextjs,
+  },
+  {
     name: "React JS",
     icon: reactjs,
   },
@@ -95,52 +98,35 @@ const technologies = [
     icon: threejs,
   },
   {
-    name: "Git",
-    icon: git,
-  },
-  {
     name: "Figma",
     icon: figma,
-  },
-  {
-    name: "Next Js",
-    icon: nextjs,
-  },
-  {
-    name: "Prisma",
-    icon: Prisma,
-  },
-  {
-    name: "MySQL",
-    icon: MySQL,
   },
 ];
 
 const experiences = [
   {
-    title: "Front end Developer",
+    title: "Freelance Web Developer",
     company_name: "Samosa King",
-    icon: samosaKing,
-    iconBg: "#323234",
-    date: "June 2020 - September 2020",
+    icon: null,
+    iconBg: "#3944bc",
+    date: "October 2021 - Present",
     points: [
-      "Created UI / UX designs of web page",
-      "Collaborated with designers and helped them implement their ideas through HTML / CSS",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Deploying webpage and finalizing SEO",
+      "Freelance web developement projects ranging from small restuarants website to full stack eccomerce apps.",
+      "Multi-tasked across multiple functions and roles to meet deadlines and organizational expectations.",
+      "Using technologies case by case: React, Next JS, Graph Ql, Mongo DB & Prisma ORM, Express, HTML/CSS.",
+      "Outreaching & Coldcalling to companies for potential clients.",
     ],
   },
   {
-    title: "React Js Developer",
-    company_name: "R2B Frontrow",
-    icon: r2b,
-    iconBg: "#111111",
-    date: "October 2021 - Febuary 2022",
+    title: "Coding Instructor",
+    company_name: "Byte Camp",
+    icon: byteCamp,
+    iconBg: "#ffffff",
+    date: "June 2023 - September 2023",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Creating an architecture for react based components aswell as mapping out JSON files to each component",
-      "Implementing responsive design and ensuring proper copyright policies.",
-      "Buying domain and hosting clients website on the web",
+      "Taught kids aged 9-14 Game Development and 3d modelling.",
+      "Led lectures in front of the class and helped struggling students with 1 to 1 help.",
+      "Used various software's such as - Blender, Godot, Inkscape, Scratch, and Kaden Live.",
     ],
   },
 ];
@@ -159,6 +145,77 @@ const testimonials = [
 ];
 
 const projects = [
+  {
+    name: "Xamaa Tech.",
+    description:
+      "Company Website for QA Test automation and web development services.",
+    tags: [
+      {
+        name: "Next Js",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Tailwind CSS",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Mux Video",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: Xamaa,
+    siteLink: "https://xaama.tech/",
+  },
+  {
+    name: "Eccomerce Dashboard",
+    description:
+      "An eccomerce application to attach your online store. Includes functionality to add or remove products, keep track of orders, add shipping options, customize colors, and customize billboards on website. Also gives analytics for sales and revenue generation per month.",
+    tags: [
+      {
+        name: "Stripe Hooks",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Prisma ORM",
+        color: "green-text-gradient",
+      },
+      {
+        name: "MySQL",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "Next JS",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: Eccomerce,
+    siteLink: "https://freds-ecom-dashboard.vercel.app/",
+  },
+  {
+    name: "Langford Man Tarps",
+    description:
+      "Online E-commerce shop for Tarps and Fabric distributer. Features include add to cart, online pay, regional tax calculator, cart system, and item customizer.",
+    tags: [
+      {
+        name: "Next Js",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Tailwind CSS",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Strip Payment",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "Authentication",
+        color: "blue-text-gradient",
+      },
+    ],
+    image: LangfordMan,
+    siteLink: "https://langfordman.ca",
+  },
   {
     name: "Macbeth Resource",
     description:
