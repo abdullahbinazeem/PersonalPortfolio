@@ -25,22 +25,21 @@ import Prisma from "./tech/Prisma.png";
 
 import byteCamp from "./company/byteCamp.png";
 
-import SamosaSite from "./siteSS/SamosaSite.png";
 import Raybarkwill from "./siteSS/RayBarkwill.png";
-import SnakeGame from "./siteSS/SnakeGame.png";
-import BookKeeperUI from "./siteSS/BookKeeperUI.png";
-import Muisician from "./siteSS/Muisician.png";
 import Macbeth from "./siteSS/Macbeth.png";
-import LangfordMan from "./siteSS/LangfordMan.jpg";
 import Xamaa from "./siteSS/Xamaa.jpg";
-import Eccomerce from "./siteSS/Eccomerce.jpg";
+import StudmenConstruction from "./siteSS/StudmenConstruction.jpg";
+import AIStudily from "./siteSS/AIStudily.jpg";
+import UTutor from "./siteSS/UTutor.jpg";
 
 import RayPfp from "./RayPfp.jpg";
 
 export {
-  Eccomerce,
-  LangfordMan,
+  UTutor,
+  AIStudily,
+  StudmenConstruction,
   Xamaa,
+  Macbeth,
   RayPfp,
   byteCamp,
   logo,
@@ -63,12 +62,7 @@ export {
   tailwind,
   typescript,
   threejs,
-  SamosaSite,
   Raybarkwill,
-  SnakeGame,
-  BookKeeperUI,
-  Muisician,
-  Macbeth,
   nextjs,
   Prisma,
   MySQL,

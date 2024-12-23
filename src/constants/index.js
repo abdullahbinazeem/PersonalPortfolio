@@ -13,17 +13,14 @@ import {
   mongodb,
   figma,
   threejs,
-  SamosaSite,
+  UTutor,
+  AIStudily,
+  StudmenConstruction,
   Raybarkwill,
-  Muisician,
+  Xamaa,
   Macbeth,
-  SnakeGame,
-  BookKeeperUI,
   RayPfp,
   byteCamp,
-  LangfordMan,
-  Xamaa,
-  Eccomerce,
 } from "../assets";
 
 export const navLinks = [
@@ -147,8 +144,7 @@ const testimonials = [
 const projects = [
   {
     name: "Xamaa Tech.",
-    description:
-      "Company Website for QA Test automation and web development services.",
+    description: "Company Website for my web development services.",
     tags: [
       {
         name: "Next Js",
@@ -164,57 +160,49 @@ const projects = [
       },
     ],
     image: Xamaa,
-    siteLink: "https://xaama.tech/",
+    siteLink: "https://xaamatech.netlify.app/",
   },
   {
-    name: "Eccomerce Dashboard",
+    name: "UTutor",
     description:
-      "An eccomerce application to attach your online store. Includes functionality to add or remove products, keep track of orders, add shipping options, customize colors, and customize billboards on website. Also gives analytics for sales and revenue generation per month.",
-    tags: [
-      {
-        name: "Stripe Hooks",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "Prisma ORM",
-        color: "green-text-gradient",
-      },
-      {
-        name: "MySQL",
-        color: "pink-text-gradient",
-      },
-      {
-        name: "Next JS",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: Eccomerce,
-    siteLink: "https://freds-ecom-dashboard.vercel.app/",
-  },
-  {
-    name: "Langford Man Tarps",
-    description:
-      "Online E-commerce shop for Tarps and Fabric distributer. Features include add to cart, online pay, regional tax calculator, cart system, and item customizer.",
+      "UTUTor is an AI-powered course generator that quickly creates tailored learning modules for learners.",
     tags: [
       {
         name: "Next Js",
         color: "blue-text-gradient",
       },
       {
-        name: "Tailwind CSS",
+        name: "Open AI",
         color: "green-text-gradient",
       },
       {
-        name: "Strip Payment",
+        name: "Youtube API",
         color: "pink-text-gradient",
       },
+    ],
+    image: UTutor,
+    siteLink: "https://ututor-ai.netlify.app",
+  },
+  {
+    name: "Studily AI",
+    description:
+      "AI Studily is an AI-driven platform that personalizes learning experiences to help students study more effectively.",
+    tags: [
       {
-        name: "Authentication",
+        name: "Next Js",
         color: "blue-text-gradient",
       },
+      {
+        name: "Open AI",
+        color: "green-text-gradient",
+      },
+      {
+        name: "MongoDB",
+        color: "pink-text-gradient",
+      },
     ],
-    image: LangfordMan,
-    siteLink: "https://langfordman.ca",
+    image: AIStudily,
+    siteLink: "https://aistudily.vercel.app/",
   },
   {
     name: "Macbeth Resource",
@@ -243,7 +231,28 @@ const projects = [
     source_code_link: "https://github.com/abdullahbinazeem/FullAuthAPP",
   },
   {
-    name: "Ray Barkwill Portal",
+    name: "Studmen Construction Website",
+    description:
+      "Studmen Construction is a modern website showcasing professional construction services, quality workmanship, and a commitment to exceptional project delivery.",
+    tags: [
+      {
+        name: "React",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Javascript",
+        color: "green-text-gradient",
+      },
+      {
+        name: "HTML/CSS",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: StudmenConstruction,
+    siteLink: "https://studmen-construction-test.netlify.app/",
+  },
+  {
+    name: "R2B Portal",
 
     description:
       "Front end web application developed in react js, it is a web portfolio for Ray Barkwill. A retired Canadian national rugby player.",
@@ -263,74 +272,6 @@ const projects = [
     ],
     image: Raybarkwill,
     siteLink: "http://r2bfrontrow.com/",
-  },
-  {
-    name: "Samosa King",
-    description:
-      "A food truck website for AL Rahman Samosa King. A local samosa food truck buisiness in Victoria, BC",
-    tags: [
-      {
-        name: "HTML/CSS",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "Javascript",
-        color: "green-text-gradient",
-      },
-    ],
-    image: SamosaSite,
-    siteLink: "https://www.alrahman.ca/",
-  },
-  {
-    name: "Multiplayer 2d Snake game",
-    description:
-      "A 2 player snake game with uses socket servers to interact between users.",
-    tags: [
-      {
-        name: "Javascript",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "Socket.io",
-        color: "green-text-gradient",
-      },
-      {
-        name: "HTML/CSS",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: SnakeGame,
-    siteLink: "https://snakio.netlify.app/",
-    source_code_link: "https://github.com/ABDAZ321/SocketServer",
-  },
-  {
-    name: "Book keeper UI design",
-    description: "A UI/UX design for a book keeping agency.",
-    tags: [
-      {
-        name: "Adobe Xd",
-        color: "green-text-gradient",
-      },
-    ],
-    image: BookKeeperUI,
-    siteLink: "https://dribbble.com/shots/20952786-Book-Keeping-UI",
-  },
-  {
-    name: "Muisician Site",
-    description: "A website for a muisician with CSS grids",
-    tags: [
-      {
-        name: "HTML/CSS",
-        color: "green-text-gradient",
-      },
-      {
-        name: "Grids",
-        color: "blue-text-gradient",
-      },
-    ],
-    image: Muisician,
-    siteLink: "https://gary-simon.netlify.app/",
-    source_code_link: "https://github.com/abdullahbinazeem/CSS-grids-proj",
   },
 ];
 
